@@ -22,7 +22,7 @@ int main(){
 
     Dosen &dsref = ds;
     dsref.nama = "joko";
-    cout << "Alamat Memorinya = " << &dsreff << endl;
+    cout << "Alamat Memorinya = " << &dsref << endl;
     dsref.tampilNama();
 
     Dosen *pds = &ds;
@@ -31,4 +31,16 @@ int main(){
     pds->tampilNama();
 
     int a = 5;
+    int b = 3;
+    int *c = &a;
+    *c = 9;
+    cout << endl;
+    cout << a << endl;
+
+    cout << "Alamat memori a = " << &a << endl;
+    cout << "Alamat memori c = " << c << endl;
+    cout << "Cetak c = " << *c << endl;
+    c = &b;
+    cout << "Alamat memori c = " << c << endl;
+    cout << "Cetak c = " << *c << endl;
 }
